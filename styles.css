@@ -1,54 +1,25 @@
-/* Aca le doy estilos a mi body */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+    background-color: #f8f9fa;
+    line-height: 1.7;
 }
 
-header,footer{
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.bg-primary{
+    background-color: purple !important;   
 }
 
-nav a{
-    color: #00ffcc;
-    margin: 0px 10px;
-    text-decoration: none;
-}
-h1,h2{
-    color: #0099cc;
+#text-primary{
+    color: #3498db;
 }
 
-form{
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 0 0 10px #ccc;
-    width: 60%;
-    margin-bottom: 20px;
+img{
+    max-width: 70%;
 }
-
-input, textarea{
-    width: 40%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border:2px solid #aaa;
-    border-radius: 5px;
-}
-
-button{
-    background-color: #0099cc;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: #007799;
+.progress{
+    background-color: rgba(250, 255, 255, 0.2);
+    border-radius: 20px ;
+    overflow: hidden;
 }

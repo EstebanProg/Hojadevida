@@ -1,68 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hola Mundo</title>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Hoja de vida</title>
   </head>
   <body>
-    <header>
-      <h1>hola</h1>
-      <nav>
-        <a href="http://google.com">sobre mi </a>
-        <a href="tel:+">contacto</a>
-        <a href="mailto:">correo</a>
-      </nav>
-    </header>
-    <main>
-      <section id="hola-mundo">
-        <h2>Hola Mundo</h2>
-        <p>Bienvenidos a mi primera página web.</p>
-        <article>
-          <h3>¿Qué es HTML?</h3>
-          <p>
-            HTML (HyperText Markup Language) es el lenguaje de marcado estándar
-            para crear páginas web.
-          </p>
-        </article>
-      </section>
-      <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Esta es una breve descripción sobre mí.</p>
-      </section>
-      <section>
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de los enlaces en el menú.</p>
-      </section>
-      <section id="contacto" class="contacto">
-        <form>
-          <h2>Contacto</h2>
-          <label for="nombre">Nombre</label><br />
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Escribe tu nombre aquí"
-          /><br /><br />
-          <label for="correo">Correo electrónico</label><br />
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="Escribe tu correo aquí"
-          /><br />
-          <label for="mensaje">Mensaje</label><br />
-          <textarea name="mensaje" id="mensaje" rows="12" cols="44"></textarea
-          ><br /><br />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Mi Página Web</p>
-      <p>Desarrollado por David Restrepo</p>
-    </footer>
+    <div class="container-lg my-5">
+      <div class="row shadow-lg rounded-4 overflow-hidden">
+        <div class="col-md-4 bg-primary text-white p-4">
+          <header class="text-center mb-4">
+            <img
+              src="./Foto personal.jpg"
+              class="img-fluid rounded-circle border border-4 border-white mb-3"
+              alt="Foto de perfil"
+            />
+            <h1 class="fw-bold mb-2">Esteban Cortés Castellanos</h1>
+            <h2>Desarrollador de Software Junior</h2>
+          </header>
+
+          <section class="mb-4">
+            <h5 class="fw-bold mb-3">
+              <i class="fas fa-address-card me-2"></i> Contacto
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://wa.me/573133934696?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20tu%20CV,%20gracias"
+                  target="_blank"
+                  class="text-white"
+                >
+                  <i class="fa-brands fa-whatsapp me-2"></i> +57 3133934696</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i>cortescastellanos71@gmail.com
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>Manizales, Caldas
+              </li>
+              <li class="mb-2">
+                <i class="fab fa-linkedin me-2"></i>linkedin.com/EstebanCortes
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/EstebanProg"
+                  target="_blank"
+                  class="text-white"
+                >
+                  <i class="fab fa-github me-2"></i>github.com/EstebanProg</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="mb-4">
+            <h5 class="fw-bold"><i class="fas fa-code me-2"></i>Habilidades</h5>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span><i class="fa-brands fa-html5 me-2"></i>HTML/CSS</span>
+                <span>50%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span><i class="fa-brands fa-python me-2"></i>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span>C#</span>
+                <span>50%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span><i class="fa-brands fa-js me-2"></i>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span><i class="fa-brands fa-java me-2"></i>Java</span>
+                <span>50%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill mb-3">
+              <div class="d-flex justify-content-between">
+                <span><i class="fa-solid fa-user-secret me-2"></i>Inglés</span>
+                <span>40%</span>
+              </div>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-white"
+                  role="progressbar"
+                  style="width: 40%"
+                ></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- columna derecha -->
+        <div class="col-md-8 bg-light p-4">
+
+          <section class="mb-5">
+            <h4 id="text-primary" class="fw-bold mb-4"><i class="fa-solid fa-business-time me-2"></i>Experiencia Laboral</h4>
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">Desarrollador Junior</h4>
+                <h5 class="card-subtitle mb-2 text-muted small">2023 - Actualidad</h5>
+                <h6 class="text-primary">Proyectos de desarrollo de nivel universitario</h6>
+                <ul>
+                  <li>Liderazgo de equipos de desarrollo</li>
+                  <li>Implementación de arquitectura API</li>
+                  <li>Optimización de rendimiento</li>
+                </ul>
+
+              </div>
+            </div>
+            <!-- Experiencia 2 -->
+            <h4 id="text-primary" class="fw-bold mb-4"><i class="fa-solid fa-business-time me-2"></i>Experiencia 2</h4>
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">Desarrollador Junior</h4>
+                <h5 class="card-subtitle mb-2 text-muted small">2023 - Actualidad</h5>
+                <h6 class="text-primary">Proyectos de desarrollo de nivel universitario</h6>
+                <ul>
+                  <li>Desarrollo en automatizaciones</li>
+                  <li>Uso de herramientas Azure DevOps</li>
+                  <li>Bases de datos SQL y NoSQL</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-4">
+            <h4 id="text-primary" class="fw-bold mb-4"><i class="fas fa-graduation-cap me-2"></i>Educación</h4>
+            <div class="card mb-3 border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">Servicio Nacional De Aprendizaje SENA</h4>
+                <h5 class="card-subtitle mb-2 text-muted small">2022 - Octubre  Enero - 2025</h5>
+                <ul>
+                  <li>Tecnologo en Desarrollo de Software</li>
+                  <li>Manejo de Herramientas Ofimaticas Nivel Intermedio</li>
+                  <li>Manejo de Base de Datos NoSQL</li>
+                </ul>
+
+                <h4 class="card-title">Universidad de Caldas</h4>
+                <h5 class="card-subtitle mb-2 text-muted small">Enero 2025 - Actualidad</h5>
+                <ul>
+                  <li>Ingenieria en Informatica</li>
+
+              </div>
+          </section>
+        </div>
+        
+      </div>
+      <div class="col-md-4 9"></div>
+    </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-''
