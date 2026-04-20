@@ -128,6 +128,12 @@
       <!-- columna derecha -->
       <div class="col-md-8 bg-light p-4">
 
+        <div class="d-flex justify-content-end mb-3 no-print">
+          <button onclick="descargarPDF()" class="btn btn-primary btn-sm">
+            <i class="fas fa-file-pdf me-2"></i>Descargar CV en PDF
+          </button>
+        </div>
+
         <section class="mb-5">
           <h4 id="text-primary" class="fw-bold mb-4">
             <i class="fa-solid fa-user me-2"></i>Sobre mí
@@ -176,6 +182,25 @@
                 </div>
               </div>
 
+              <div class="card mb-3 border shadow-sm bg-light-subtle">
+                <div class="card-body">
+                  <h4 class="card-title">Soporte técnico y configuración de herramientas digitales</h4>
+                  <h5 class="card-subtitle mb-2 text-muted small">Jun 2025 — Presente</h5>
+                  <h6 class="text-primary">SERTICLOUD S.A.S | Manizales, Colombia</h6>
+                  <ul>
+                    <li>Soporte técnico y configuración de sistemas CRM, realizando integraciones mediante APIs para la
+                      automatización de procesos empresariales.</li>
+                    <li>Desarrollo y despliegue de agentes de inteligencia artificial y chats personalizados con
+                      ChatGPT, utilizando Python y FastAPI para la creación y gestión de APIs.</li>
+                    <li>Administración de bases de datos MySQL y PostgreSQL, y uso de herramientas como Postman e
+                      Insomnia para pruebas y validación de endpoints.</li>
+                    <li>Atención al cliente en temas de soporte técnico relacionados con CRM e integraciones, e
+                      implementación de entornos de despliegue en AWS, garantizando estabilidad, seguridad y
+                      eficiencia operativa.</li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -211,7 +236,137 @@
   </div>
 
 
+  <!-- Template oculto para PDF -->
+  <div id="cv-pdf" style="display:none;width:210mm;font-family:'Segoe UI',Arial,sans-serif;font-size:11px;color:#222;background:white;margin:0;padding:0;">
+    <div style="display:flex;height:297mm;overflow:hidden;">
+
+      <!-- SIDEBAR IZQUIERDO -->
+      <div style="width:34%;background:purple;color:white;padding:24px 16px;box-sizing:border-box;flex-shrink:0;">
+        <div style="text-align:center;margin-bottom:20px;">
+          <img src="./Foto personal.jpg" style="width:88px;height:88px;border-radius:50%;border:3px solid rgba(255,255,255,0.6);object-fit:cover;display:block;margin:0 auto 10px;" crossorigin="anonymous"/>
+          <div style="font-size:15px;font-weight:bold;line-height:1.25;margin-bottom:5px;">Esteban Cortés<br>Castellanos</div>
+          <div style="font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:10px;">DESARROLLADOR DE SOFTWARE JUNIOR</div>
+          <div style="width:36px;height:2px;background:rgba(255,255,255,0.35);margin:0 auto;"></div>
+        </div>
+
+        <div style="margin-bottom:18px;">
+          <div style="font-size:11px;font-weight:bold;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;">Datos personales</div>
+          <div style="font-size:8.5px;line-height:1.9;color:rgba(255,255,255,0.85);">
+            <div>&#128205; Manizales, Caldas</div>
+            <div>&#128222; +57 3133934696</div>
+            <div>&#9993; cortescastellanos71@gmail.com</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px;">
+          <div style="font-size:11px;font-weight:bold;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;">Links</div>
+          <div style="font-size:8.5px;line-height:1.9;color:rgba(255,255,255,0.85);">
+            <div>github.com/EstebanProg</div>
+            <div>wa.me/573133934696</div>
+            <div>linkedin.com/EstebanCortes</div>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:11px;font-weight:bold;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;">Competencias</div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">HTML / CSS</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:50%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">Python</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:80%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">C#</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:50%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">JavaScript</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:80%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">Java</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:50%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">FastAPI / APIs REST</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:75%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">MySQL / PostgreSQL</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:70%;"></div></div></div>
+          <div style="margin-bottom:7px;"><div style="font-size:8.5px;margin-bottom:3px;">AWS</div><div style="background:rgba(255,255,255,0.15);height:4px;border-radius:2px;"><div style="background:rgba(255,255,255,0.7);height:4px;border-radius:2px;width:55%;"></div></div></div>
+        </div>
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div style="width:66%;background:white;padding:28px 22px;box-sizing:border-box;">
+
+        <div style="margin-bottom:18px;">
+          <div style="font-size:17px;font-weight:bold;color:#111;border-bottom:2px solid purple;padding-bottom:4px;margin-bottom:8px;">Perfil profesional</div>
+          <p style="font-size:9px;line-height:1.65;color:#444;margin:0;">Soy un apasionado por el desarrollo de software, con bases sólidas en front-end, back-end y bases de datos SQL y NoSQL. Aspiro a consolidarme como Desarrollador Fullstack, con énfasis en fortalecer mis habilidades en el desarrollo front-end para crear interfaces dinámicas, accesibles y centradas en el usuario. Me motiva trabajar en proyectos donde pueda aprender constantemente, resolver problemas reales y contribuir con soluciones tecnológicas eficientes, escalables y de impacto.</p>
+        </div>
+
+        <div style="margin-bottom:18px;">
+          <div style="font-size:17px;font-weight:bold;color:#111;border-bottom:2px solid purple;padding-bottom:4px;margin-bottom:12px;">Experiencia laboral</div>
+
+          <div style="margin-bottom:12px;">
+            <div style="font-size:9.5px;font-weight:bold;color:#111;line-height:1.3;">Practicante en Automatización y Gestión de Proyectos TI<br><span style="color:#555;font-weight:normal;">Aguas de Manizales S.A. E.S.P. - Bic | Manizales, Colombia</span></div>
+            <div style="font-size:7.5px;color:purple;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:3px 0 5px;">Jul 2024 — Ene 2025</div>
+            <ul style="margin:0;padding-left:13px;font-size:8.5px;color:#444;line-height:1.65;">
+              <li>Implementación de automatizaciones con Microsoft Power Automate para mejorar la eficiencia de procesos empresariales.</li>
+              <li>Uso de Python para escribir scripts de automatización y análisis de datos.</li>
+              <li>Administración de proyectos con Microsoft DevOps: gestión de repositorios, pipelines y despliegues automáticos.</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom:12px;">
+            <div style="font-size:9.5px;font-weight:bold;color:#111;line-height:1.3;">Soporte técnico y configuración de herramientas digitales<br><span style="color:#555;font-weight:normal;">SERTICLOUD S.A.S | Manizales, Colombia</span></div>
+            <div style="font-size:7.5px;color:purple;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:3px 0 5px;">Jun 2025 — Presente</div>
+            <ul style="margin:0;padding-left:13px;font-size:8.5px;color:#444;line-height:1.65;">
+              <li>Soporte técnico y configuración de sistemas CRM con integraciones mediante APIs para automatización de procesos.</li>
+              <li>Desarrollo y despliegue de agentes de IA y chats personalizados con ChatGPT usando Python y FastAPI.</li>
+              <li>Administración de bases de datos MySQL y PostgreSQL; validación de endpoints con Postman e Insomnia.</li>
+              <li>Implementación de entornos en AWS garantizando estabilidad, seguridad y eficiencia operativa.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:17px;font-weight:bold;color:#111;border-bottom:2px solid purple;padding-bottom:4px;margin-bottom:12px;">Formación</div>
+
+          <div style="margin-bottom:9px;">
+            <div style="font-size:9.5px;font-weight:bold;color:#111;">Tecnólogo en Desarrollo de Software</div>
+            <div style="font-size:8.5px;color:#555;">Servicio Nacional de Aprendizaje SENA, Manizales</div>
+            <div style="font-size:7.5px;color:purple;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">2022 — Ene 2025</div>
+          </div>
+
+          <div style="margin-bottom:9px;">
+            <div style="font-size:9.5px;font-weight:bold;color:#111;">Ingeniería en Informática</div>
+            <div style="font-size:8.5px;color:#555;">Universidad de Caldas</div>
+            <div style="font-size:7.5px;color:purple;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">Ene 2025 — Actualidad</div>
+          </div>
+
+          <div style="margin-bottom:9px;">
+            <div style="font-size:9.5px;font-weight:bold;color:#111;">Bootcamp de Programación — TalentoTech (Nivel Explorador)</div>
+            <div style="font-size:7.5px;color:purple;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-top:2px;">Abr 2025 — May 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="./foto.js"></script>
+  <script>
+    function descargarPDF() {
+      const el = document.getElementById('cv-pdf');
+      el.querySelector('img').src = FOTO_B64;
+      el.style.display = 'block';
+      setTimeout(() => {
+        html2canvas(el, {
+          scale: 2,
+          useCORS: false,
+          allowTaint: true,
+          logging: false,
+          scrollX: 0,
+          scrollY: 0,
+          width: el.offsetWidth,
+          height: el.offsetHeight
+        }).then(canvas => {
+          const { jsPDF } = window.jspdf;
+          const pdf = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+          pdf.addImage(canvas.toDataURL('image/jpeg', 0.98), 'JPEG', 0, 0, 210, 297);
+          pdf.save('Hoja_de_Vida_Esteban_Cortes.pdf');
+          el.style.display = 'none';
+        });
+      }, 400);
+    }
+  </script>
 </body>
 
 </html>

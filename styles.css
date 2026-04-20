@@ -30,3 +30,15 @@ img{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media print {
+    .no-print { display: none !important; }
+    body { background-color: #fff !important; }
+    .container-lg { margin: 0 !important; padding: 0 !important; max-width: 100% !important; }
+    .shadow-lg { box-shadow: none !important; }
+    .bg-primary { background-color: purple !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .bg-light { background-color: #f8f9fa !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card { box-shadow: none !important; border: 1px solid #ddd !important; }
+    .card:hover { transform: none !important; }
+    a { color: inherit !important; text-decoration: none !important; }
+}
