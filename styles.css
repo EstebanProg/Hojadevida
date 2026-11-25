@@ -374,3 +374,226 @@ body {
     .card:hover { transform: none !important; }
     a { color: inherit !important; text-decoration: none !important; }
 }
+
+/* ===================== Plantilla del PDF (A4: 794 x 1123 px) ===================== */
+#cv-pdf {
+    display: none;
+    width: 794px;
+    background: #fff;
+    color: #2b2433;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+#cv-pdf * {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.pdf-page {
+    display: flex;
+    width: 794px;
+    height: 1123px;
+    overflow: hidden;
+}
+
+.pdf-side {
+    width: 270px;
+    flex-shrink: 0;
+    padding: 26px 20px;
+    color: #fff;
+    background: linear-gradient(160deg, #6a1b9a 0%, #4a148c 60%, #3c0a5e 100%);
+}
+
+.pdf-head {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.pdf-foto {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ce93d8;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.pdf-nombre {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+.pdf-rol {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .75);
+    margin-bottom: 10px;
+}
+
+.pdf-sep {
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    background: #ce93d8;
+}
+
+.pdf-side-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 4px;
+    margin: 14px 0 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.pdf-contacto {
+    font-size: 10px;
+    line-height: 2;
+    color: rgba(255, 255, 255, .9);
+}
+
+.pdf-ic {
+    display: inline-block;
+    width: 16px;
+}
+
+.pdf-grupo {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+    margin: 12px 0 6px;
+}
+
+.pdf-skill {
+    margin-bottom: 8px;
+}
+
+.pdf-skill-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.5px;
+    margin-bottom: 3px;
+}
+
+.pdf-bar {
+    height: 5px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .18);
+}
+
+.pdf-bar > div {
+    height: 5px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #ce93d8, #ffffff);
+}
+
+.pdf-nota {
+    font-size: 9px;
+    line-height: 1.45;
+    margin-top: 6px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.pdf-main {
+    flex: 1;
+    padding: 28px 26px;
+    background: #fff;
+}
+
+.pdf-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6a1b9a;
+    padding-bottom: 4px;
+    margin: 0 0 10px;
+    border-bottom: 2px solid #e3d6ec;
+}
+
+.pdf-perfil {
+    font-size: 10px;
+    line-height: 1.65;
+    color: #4a4252;
+    margin: 0 0 20px;
+}
+
+.pdf-timeline {
+    position: relative;
+    margin: 0 0 20px 6px;
+    padding-left: 18px;
+    border-left: 2px solid #e3d6ec;
+}
+
+.pdf-item {
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.pdf-item:last-child {
+    padding-bottom: 0;
+}
+
+.pdf-dot {
+    position: absolute;
+    left: -25px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #8e24aa;
+}
+
+.pdf-fecha {
+    display: inline-block;
+    font-size: 7.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6a1b9a;
+    background: #f3e5f5;
+    padding: 1px 8px;
+    border-radius: 999px;
+    margin-bottom: 3px;
+}
+
+.pdf-cargo {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1f1a26;
+    line-height: 1.3;
+}
+
+.pdf-org {
+    font-size: 9.5px;
+    color: #6b6375;
+    margin-bottom: 3px;
+}
+
+.pdf-item ul {
+    margin: 0 0 4px;
+    padding-left: 13px;
+    font-size: 9.5px;
+    color: #4a4252;
+    line-height: 1.55;
+}
+
+.pdf-tags span {
+    display: inline-block;
+    font-size: 7.5px;
+    font-weight: 600;
+    color: #6a1b9a;
+    border: 1px solid #e3d6ec;
+    background: #faf5fc;
+    padding: 1px 7px;
+    border-radius: 999px;
+    margin: 0 3px 3px 0;
+}
